@@ -1,0 +1,291 @@
+.header {
+  max-width: 1800px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+ 
+}
+.header-menu a {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  display: block;
+  
+}
+.conteudo-principal{
+background-color: #151515;
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: right;
+padding: 20px 30px;
+gap: 20px;
+color: aliceblue;
+align-items: center;
+
+}
+.conteudo-principal img{
+  padding-left: 250px;
+}
+.conteudo-principal p{
+  padding-left: 30px;
+}
+
+
+
+.header img {
+  
+  max-width: 300px;
+
+ 
+
+}
+
+.conteudo-principal p {
+  font-size: 1.725rem;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 20px;
+}
+
+.subtitulo {
+font-size: 1.50rem;
+color: aliceblue;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
+padding: 20px 20px;
+}
+.noticias{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 20px;
+  justify-content: left;
+  padding: 20px 90px;
+  
+}
+.noticias img{
+  width:500px;
+
+}
+
+.lista-noticias{
+  color: #141414;
+  background-color: aliceblue;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  padding: 20px;
+  width: 500px;
+
+
+}
+.lista-noticias a {
+bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 70px;
+  }
+  .lista-noticias{
+    font-size: 1.125rem;
+    width: 200px;
+    flex-direction: column;
+  }
+  .noticias{
+    flex-direction: column;
+  }
+  .conteudo-principal p{
+    font-size: 1.125rem;
+    justify-self: center;
+    padding-left: 100px;
+  }
+  .conteudo-principal img {
+    display: none;
+  }
+  .header a {
+    background: #b2b2b2;
+    border-radius: 4px;
+  }
+  }
+ 
+  .header a {
+    background: #b2b2b2;
+    border-radius: 4px;
+  }
+
+
+  /* Carrosel Experimental */
+  * {box-sizing:border-box}
+
+  .slideshow {
+    max-width: 1000px;
+    position: relative;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 20px;
+    justify-content: left;
+    padding: 20px 70px;
+    
+
+  }
+  .mySlides p {
+  color:#b2b2b2 ;
+  text-align: center;
+  font-size: 1.5rem;
+  grid-column: 2;
+
+
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+  
+  
+
+  padding-left: 30px;
+  padding-right: 10px;
+  
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width:-5%;
+    margin-top:-22px;
+    padding: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+   
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 1px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  /* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  } */
+  
+  /* Number text (1/3 etc) */
+  /* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0px;
+  color: #141414;
+  background-color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
