@@ -1,0 +1,13 @@
+<div id="slideshow" data-component="slideshow">
+		<div role="list">
+			<div class="slide">
+				<img src="img/Slide1.png" alt="">
+			</div>
+			<div class="slide">
+				<img src="img/Slide2.png" alt="">
+			</div>
+			<div class="slide">
+				<img src="img/Slide3.png" alt="">
+			</div>
+		</div>
+	</div>
